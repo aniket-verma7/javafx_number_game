@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="400.0" minWidth="300" prefHeight="500.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.numbergame.controller.GameController">
+    <children>
+        <Pane prefHeight="50.0" prefWidth="600.0">
+            <children>
+                <TextField fx:id="player1" layoutX="110.0" layoutY="14.0" />
+                <TextField fx:id="player2" layoutX="390.0" layoutY="14.0" />
+                <Label fx:id="label2" layoutX="290.0" layoutY="15.0" text="Player 2" textFill="#000dff">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label1" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="15.0" text="Player 1" textFill="#ee0303">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+
+        <Pane fx:id="board" layoutY="50.0" minHeight="300.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+
+        <Pane fx:id="paneBottom" layoutY="460.0" prefHeight="50.0" prefWidth="600.0">
+            <children>
+                <Button layoutX="5.0" layoutY="10.0" mnemonicParsing="false" onAction="#playAgain" text="Play Again" />
+                <TextField fx:id="result" editable="false" layoutX="100.0" layoutY="10.0" prefWidth="450.0" />
+            </children>
+        </Pane>
+
+    </children>
+</AnchorPane>
